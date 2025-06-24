@@ -10,7 +10,7 @@ export const navigation = [
 		href: '/process',
 		current: true,
 	},
-	{ name: 'Contact Us', href: '/contact-us', current: false },
+	{ name: 'Contact Us', href: '#', current: false },
 ];
 export const itemInfo1 = [
 	{
