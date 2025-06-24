@@ -7,7 +7,7 @@ export const navigation = [
 	},
 	{
 		name: 'Process',
-		href: '/micro-market-solutions',
+		href: '/process',
 		current: true,
 	},
 	{ name: 'Contact Us', href: '/contact-us', current: false },

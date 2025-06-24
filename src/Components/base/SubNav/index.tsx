@@ -123,7 +123,7 @@ const SubNavBar = (props: IProps) => {
 											</Link>
 										</button>
 									</div>
-									<div className="flex-1 basis-[70%]">
+									<div className="flex-1 basis-[60%]">
 										<div className={styles.itemList2}>
 											{navigation.map((item) => (
 												<Link
