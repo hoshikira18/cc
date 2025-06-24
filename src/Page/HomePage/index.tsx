@@ -1,9 +1,9 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import Footer from '../../Components/base/Footer';
 import Header from '../../Components/base/Header';
 import { useEffect, useState } from 'react';
 
 import { useInView } from 'react-intersection-observer';
+import Footer from '../../Components/NM/common/Footer';
 interface IconButtonProps {
 	Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 	customColor?: string;
@@ -31,6 +31,7 @@ const HomePage = () => {
 					collapsed={collapsed}
 				/>
 				<Outlet />
+				<Footer />
 			</div>
 		</>
 	);

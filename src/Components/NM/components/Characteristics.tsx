@@ -53,7 +53,7 @@ const Content = ({
 					src="/content-green.webp"
 					className="w-[380px] h-[200px]"
 				/>
-				<div className="font-medium w-[220px] translate-y-[-10em] translate-x-[4em]">
+				<div className="font-medium w-[520px] translate-y-[-10em] translate-x-[4em]">
 					<span className="dancing-font text-3xl">Bạn có biết ?</span>
 					<div className="text-sm mt-2">{description}</div>
 				</div>
@@ -162,7 +162,7 @@ const Feature1 = () => {
 						<img
 							alt="hanh-fuck"
 							className="absolute left-[-2em] top-14 z-[-1] -rotate-3 scale-150 h-64 w-44 border-4 border-white shadow-lg"
-							src="/anh-1.jpg"
+							src="/anh-3.jpg"
 							loading="lazy"
 						/>
 					</picture>
@@ -185,7 +185,7 @@ const Feature1 = () => {
 			>
 				<Content
 					title="Nông Dân"
-					description="Chúng tôi đang hợp tác với các nông dân trong việc áp dụng các phương pháp nông nghiệp tái sinh."
+					description="Người nông dân ở Bắc Kạn chăm sóc vườn chuối tiêu xanh bắt đầu từ việc chọn giống khỏe, trồng đúng khoảng cách và bón phân chuồng hoai mục để cây phát triển tốt. Trong quá trình sinh trưởng, họ thường xuyên tưới nước, làm cỏ, vun gốc, tỉa mầm và chống đổ cho cây, đặc biệt trong mùa mưa bão. Để phòng sâu bệnh, họ ưu tiên biện pháp tự nhiên hoặc dùng thuốc sinh học. Khi cây ra hoa và buồng, người dân sẽ buộc buồng chuối, che nắng bằng lá hoặc bao để trái phát triển đều. Đến thời điểm chín, họ thu hoạch đúng kỹ thuật để giữ chất lượng chuối, phục vụ tiêu thụ trong nước hoặc xuất khẩu. Công việc đòi hỏi sự tỉ mỉ, kiên trì và gắn bó với đất đai quanh năm."
 				/>
 			</div>
 		</div>
@@ -398,7 +398,7 @@ const Feature3 = () => {
 						<img
 							alt="hanh-fuck"
 							className="absolute left-[-5em] top-0 h-80 w-56 z-[-2] border-4 border-white shadow-lg scale-110"
-							src="/anh-3.jpg"
+							src="/anh-5.jpg"
 							loading="lazy"
 						/>
 					</picture>
@@ -627,7 +627,7 @@ const Feature5 = () => {
 						<img
 							alt="hanh-fuck"
 							className="absolute left-[-6em] top-0 h-90 w-60 z-[-2] rotate-2 border-4 border-white shadow-lg scale-110"
-							src="/anh-5.jpg"
+							src="/anh-1.jpg"
 							loading="lazy"
 						/>
 					</picture>

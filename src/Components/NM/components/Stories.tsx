@@ -24,7 +24,9 @@ const Element = ({ elements, index }: ElementProps) => {
 					className={`${imageClass.trim()} mt-6`}
 				/>
 			</div>
-			<p className="text-center -translate-y-8 font-medium">{elements.name}</p>
+			<p className="text-center -translate-y-8 font-medium">
+				{elements.name}
+			</p>
 		</div>
 	);
 };
@@ -50,10 +52,6 @@ const elements = [
 		image: '/5.png',
 		name: 'Ảnh 5',
 	},
-	{
-		image: '/6.png',
-		name: 'Ảnh 6',
-	},
 ];
 
 function Stories() {
@@ -61,18 +59,20 @@ function Stories() {
 		<div className="bg-gradient-to-t from-transparent to-[#81b085]  -translate-y-[54px]">
 			<section className="flex flex-col items-center gap-4 xl:px-[360px] lg:px-52 md:px-20 px-16 montserrat-font mb-6">
 				<span className="title py-2 pt-16">
-					Khám phá câu chuyện của những nghệ nhân tạo nên từng tách cà
-					phê mà bạn đang thưởng thức
+					Khám phá câu chuyện của những người thầm lặng đứng sau từng
+					cốc tinh bột kháng mà bạn đang sử dụng mỗi ngày
 				</span>
 				<p className="text-lg py-2">
-					Giới thiệu các Nghệ Nhân của chúng tôi: Khám phá sự tận tâm
-					và kỹ nghệ của các nghệ nhân cà phê NESCAFÉ®.
+					Giới thiệu hành trình làm ra tinh bột kháng Kháng Tinh An:
+					Khám phá sự tận tâm, nghiên cứu nghiêm túc và công nghệ hiện
+					đại phía sau từng mẻ tinh bột kháng từ chuối tiêu xanh – để
+					sức khỏe của bạn luôn bắt đầu từ những điều nhỏ nhất.
 				</p>
 			</section>
 
 			<section className="flex flex-col items-center gap-8 montserrat-font">
 				<span className="title text-center py-8 px-16">
-					Gặp Gỡ Những Nghệ Nhân Cà Phê
+					Gặp Gỡ Những Người Làm Nên Kháng Tinh An
 				</span>
 				<div className="flex items-center gap-16 lg:gap-20 mb-8 flex-row flex-wrap lg:flex-nowrap justify-center w-full px-24">
 					{elements.map((item, index) => (
