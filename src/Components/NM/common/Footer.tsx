@@ -87,10 +87,10 @@ const elementContact = [
 
 function Footer() {
   return (
-    <section className="bg-[#317337] text-white py-16 montserrat-font px-32 z-10">
-      <div className="grid grid-cols-7">
+    <section className="bg-[#317337] text-white py-16 montserrat-font md:px-32 px-10 z-10">
+      <div className="grid lg:grid-cols-7 grid-cols-2 gap-y-10 gap-x-24">
         {elements.map((item, index) => (
-          <div key={index} className="flex flex-col gap-4 col-span-2">
+          <div key={index} className="flex flex-col gap-4 lg:col-span-2">
             <div className="font-semibold dancing-font text-xl">
               {item.title}
             </div>
@@ -115,9 +115,9 @@ function Footer() {
           ))}
         </div>
       </div>
-      <div className="bg-white text-[#317337] my-8 grid grid-cols-4 text-xs font-medium items-center rounded-full py-2 ps-10">
+      <div className="bg-white text-[#317337] my-8 grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 text-xs font-medium items-center rounded-full py-2 place-items-center">
         <div className="flex items-center gap-4">
-          <img src="/logo.png" alt="logo" className="w-12 scale-250" />
+          <img src="/logo.png" alt="logo" className="w-12 scale-150" />
           <span className="border-l-3 border-[#317337] px-4 font-bold py-4">
             Thông tin liên hệ
           </span>
@@ -142,7 +142,7 @@ export default Footer;
 
 function ContactInfo() {
   return (
-    <section className="flex justify-center">
+    <section className="flex justify-center md:flex-row flex-col items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
         <div className="flex flex-col gap-3">
           {elementContact.slice(0, 2).map((item, index) => (
@@ -155,7 +155,7 @@ function ContactInfo() {
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-3 ms-24">
+        <div className="flex flex-col gap-3 md:ms-24">
           {elementContact.slice(2).map((item, index) => (
             <div key={index} className="flex items-center gap-3">
               <FontAwesomeIcon

@@ -6,7 +6,7 @@ import { useVisibleOnScroll } from '../hooks/useVisibleOnScroll';
 function Characteristics() {
 	const { ref, visible } = useVisibleOnScroll();
 	return (
-		<div className="flex flex-col items-center relative">
+		<div className="flex flex-col items-center relative overflow-hidden">
 			<div ref={ref}>
 				<img
 					src="/lam-voi-dam-me.png"
@@ -77,9 +77,9 @@ const Feature = () => {
 const Feature1 = () => {
 	const { ref, visible } = useVisibleOnScroll();
 	return (
-		<div ref={ref} className="flex flex-col">
-			<div className="absolute mt-4">
-				<div className="">
+		<div ref={ref}>
+			<div className="absolute mt-4 translate-x-[14em] md:translate-x-0">
+				<div className="md:block hidden">
 					<img
 						src="/bean.png"
 						alt="cf-bean"
@@ -105,7 +105,30 @@ const Feature1 = () => {
 						/>
 					</svg>
 				</div>
-
+				<div className="translate-x-[-4em] md:hidden block">
+					<img
+						src="/bean.png"
+						alt="cf-bean"
+						loading="lazy"
+						className={
+							visible
+								? 'bean-motion-1-mobile drop-shadow-lg'
+								: 'opacity-0'
+						}
+					/>
+					<svg
+						width="74"
+						height="119"
+						viewBox="0 0 74 119"
+						fill="none"
+					>
+						<path
+							d="M4.99982 1C-6.5004 37 16.5001 96 73 117.5"
+							stroke="#3d780a"
+							stroke-width="3"
+						></path>
+					</svg>
+				</div>
 				<div className="relative">
 					<div className="relative top-36 left-8 z-0 rounded-full bg-[#ffffff76] size-14 -rotate-2 cursor-pointer">
 						<FontAwesomeIcon
@@ -155,7 +178,7 @@ const Feature1 = () => {
 				</div>
 			</div>
 			<div
-				className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative left-[280px] top-[120px] ${
+				className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative md:left-[280px] md:top-[120px] top-[620px] left-[100px] ${
 					visible ? 'animation-move-right' : 'opacity-0'
 				}`}
 			>
@@ -174,7 +197,7 @@ const Feature2 = () => {
 	return (
 		<div ref={ref}>
 			<div className="mt-20">
-				<div className="translate-x-12 -translate-y-3">
+				<div className="translate-x-12 -translate-y-3 md:block hidden">
 					<img
 						src="/bean.png"
 						alt="cf-bean"
@@ -199,8 +222,32 @@ const Feature2 = () => {
 						></path>
 					</svg>
 				</div>
-
-				<div className="relative">
+				<div className="translate-x-[-16em] -translate-y-8 md:hidden block -scale-x-100">
+					<img
+						src="/bean.png"
+						alt="cf-bean"
+						loading="lazy"
+						className={
+							visible
+								? 'bean-motion-2-mobile drop-shadow-lg'
+								: 'opacity-0'
+						}
+					/>
+					<svg
+						width="59"
+						height="582"
+						viewBox="0 0 59 582"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M2 1C77.187 131.917 66.7736 437.565 21.5918 581"
+							stroke="#3d780a"
+							stroke-width="3"
+						></path>
+					</svg>
+				</div>
+				<div className="relative translate-x-[-14em] md:translate-x-0">
 					<div className="relative top-32 left-[27em] z-2 rounded-full bg-[#ffffff76] size-14 -rotate-4 cursor-pointer">
 						<FontAwesomeIcon
 							icon={faPlay}
@@ -246,7 +293,7 @@ const Feature2 = () => {
 					/>
 				</div>
 				<div
-					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative left-[-6em] top-[-2em] ${
+					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative md:left-[-6em] md:top-[-2em] top-[26em] left-[4em] ${
 						visible ? 'animation-move-left' : 'opacity-0'
 					}`}
 				>
@@ -266,7 +313,7 @@ const Feature3 = () => {
 	return (
 		<div ref={ref}>
 			<div className="-mt-10">
-				<div className="translate-x-36">
+				<div className="translate-x-36 md:block hidden">
 					<img
 						src="/bean.png"
 						alt="cf-bean"
@@ -291,8 +338,32 @@ const Feature3 = () => {
 						></path>
 					</svg>
 				</div>
-
-				<div className="relative">
+				<div className="translate-x-[25em] -translate-y-16 md:hidden block">
+					<img
+						src="/bean.png"
+						alt="cf-bean"
+						loading="lazy"
+						className={
+							visible
+								? 'bean-motion-2-mobile drop-shadow-lg'
+								: 'opacity-0'
+						}
+					/>
+					<svg
+						width="59"
+						height="582"
+						viewBox="0 0 59 582"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M2 1C77.187 131.917 66.7736 437.565 21.5918 581"
+							stroke="#3d780a"
+							stroke-width="3"
+						></path>
+					</svg>
+				</div>
+				<div className="relative -translate-y-16 translate-x-[15em] md:translate-x-0 md:translate-y-0">
 					<div className="relative top-36 left-[1em] z-2 rounded-full bg-[#ffffff76] size-14 cursor-pointer">
 						<FontAwesomeIcon
 							icon={faPlay}
@@ -338,7 +409,7 @@ const Feature3 = () => {
 					/>
 				</div>
 				<div
-					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative left-[280px] ${
+					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative md:left-[280px] left-[100px] md:top-0 top-[360px] ${
 						visible ? 'animation-move-right' : 'opacity-0'
 					}`}
 				>
@@ -358,7 +429,7 @@ const Feature4 = () => {
 	return (
 		<div ref={ref}>
 			<div className="-mt-12">
-				<div className="translate-x-8 -translate-y-16">
+				<div className="translate-x-8 -translate-y-16 md:block hidden">
 					<img
 						src="/bean.png"
 						alt="cf-bean"
@@ -383,8 +454,32 @@ const Feature4 = () => {
 						></path>
 					</svg>
 				</div>
-
-				<div className="relative">
+				<div className="-translate-x-[17em] -translate-y-36 md:hidden block -scale-x-100 ">
+					<img
+						src="/bean.png"
+						alt="cf-bean"
+						loading="lazy"
+						className={
+							visible
+								? 'bean-motion-2-mobile drop-shadow-lg'
+								: 'opacity-0'
+						}
+					/>
+					<svg
+						width="59"
+						height="582"
+						viewBox="0 0 59 582"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M2 1C77.187 131.917 66.7736 437.565 21.5918 581"
+							stroke="#3d780a"
+							stroke-width="3"
+						></path>
+					</svg>
+				</div>
+				<div className="relative md:translate-x-0 translate-x-[-14em] md:translate-y-0 translate-y-[-5em] -z-10">
 					<div className="relative top-20 left-[27em] z-2 rounded-full bg-[#ffffff76] size-14 -rotate-4 cursor-pointer">
 						<FontAwesomeIcon
 							icon={faPlay}
@@ -425,7 +520,7 @@ const Feature4 = () => {
 					/>
 				</div>
 				<div
-					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative left-[-7em] top-[-5em] ${
+					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative md:left-[-7em] md:top-[-5em] left-[4em] top-[20em] ${
 						visible ? 'animation-move-left' : 'opacity-0'
 					}`}
 				>
@@ -445,7 +540,7 @@ const Feature5 = () => {
 	return (
 		<div ref={ref}>
 			<div className="-mt-28">
-				<div className="translate-x-36">
+				<div className="translate-x-36 md:block hidden">
 					<img
 						src="/bean.png"
 						alt="cf-bean"
@@ -470,8 +565,32 @@ const Feature5 = () => {
 						></path>
 					</svg>
 				</div>
-
-				<div className="relative">
+				<div className="translate-x-[25em] -translate-y-20 md:hidden block ">
+					<img
+						src="/bean.png"
+						alt="cf-bean"
+						loading="lazy"
+						className={
+							visible
+								? 'bean-motion-2-mobile drop-shadow-lg'
+								: 'opacity-0'
+						}
+					/>
+					<svg
+						width="59"
+						height="582"
+						viewBox="0 0 59 582"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M2 1C77.187 131.917 66.7736 437.565 21.5918 581"
+							stroke="#3d780a"
+							stroke-width="3"
+						></path>
+					</svg>
+				</div>
+				<div className="relative translate-x-[16em] md:translate-x-0 md:translate-y-0 translate-y-[-4em] -z-10">
 					<div className="relative top-36 left-0 z-2 rounded-full bg-[#ffffff76] size-14 cursor-pointer rotate-4">
 						<FontAwesomeIcon
 							icon={faPlay}
@@ -517,7 +636,7 @@ const Feature5 = () => {
 					/>
 				</div>
 				<div
-					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative left-[280px] ${
+					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative md:left-[280px] left-[4em] top-[18em] mb-64 ${
 						visible ? 'animation-move-right' : 'opacity-0'
 					}`}
 				>

@@ -163,7 +163,7 @@ html {
 
   .bean-motion-1-mobile {
     offset-path: path(
-      "M171.617 1.48242C137.635 76.7144 66 44.999 36 55.9993C6 66.9995 1.64822 82.146 1.64822 82.146"
+      "M4.99982 1C-6.5004 37 16.5001 96 73 117.5"
     );
     offset-rotate: 350deg;
     animation: moveAlong 3s ease-in-out forwards;
@@ -174,7 +174,7 @@ html {
 
   .bean-motion-2-mobile {
     offset-path: path(
-      "M171.617 1.48242C137.635 76.7144 66 44.999 36 55.9993C6 66.9995 1.64822 82.146 1.64822 82.146"
+      "M2 1C77.187 131.917 66.7736 437.565 21.5918 581"
     );
     offset-rotate: 350deg;
     animation: moveAlong 3s ease-in-out forwards;
