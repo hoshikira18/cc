@@ -43,7 +43,7 @@ const App: React.FC = () => {
 							path="/products/:id"
 							element={<ProductDetailPage />}
 						/>
-						<Route path="/process" element={<Process />} />
+						<Route path="process" element={<Process />} />
 						<Route
 							path="micro-market-solutions"
 							element={<ProductPage />}

@@ -10,7 +10,7 @@ function Characteristics() {
 			<div ref={ref}>
 				<img
 					src="/lam-voi-dam-me.png"
-					className={`transition-opacity duration-700 animation-move-left ${
+					className={`transition-opacity duration-700 animation-move-left w-52 ${
 						visible ? 'animation-move-left' : 'opacity-0'
 					}`}
 					alt=""
@@ -77,7 +77,7 @@ const Feature = () => {
 const Feature1 = () => {
 	const { ref, visible } = useVisibleOnScroll();
 	return (
-		<div ref={ref}>
+		<div ref={ref} className="flex flex-col">
 			<div className="absolute mt-4">
 				<div className="">
 					<img
@@ -99,7 +99,7 @@ const Feature1 = () => {
 					>
 						<path
 							d="M171.617 1.48242C137.635 76.7144 66 44.999 36 55.9993C6 66.9995 1.64822 82.146 1.64822 82.146"
-							stroke="white"
+							stroke="#3d780a"
 							strokeWidth="3"
 							fill="none"
 						/>
@@ -107,7 +107,7 @@ const Feature1 = () => {
 				</div>
 
 				<div className="relative">
-					<div className="relative top-36 left-12 z-0 rounded-full bg-[#ffffff76] size-14 rotate-4 cursor-pointer">
+					<div className="relative top-36 left-8 z-0 rounded-full bg-[#ffffff76] size-14 -rotate-2 cursor-pointer">
 						<FontAwesomeIcon
 							icon={faPlay}
 							size="xl"
@@ -115,16 +115,21 @@ const Feature1 = () => {
 						/>
 					</div>
 					<picture>
+						<div className="-rotate-[10deg]">
+							<img
+								className={`transition-opacity duration-700 absolute z-1 scale-115 -top-8 left-36 w-12 ${
+									visible
+										? 'animation-move-right'
+										: 'opacity-0'
+								}`}
+								src="https://www.nescafe.com/vn/themes/custom/nescafe/UI/build/images/zGbszVP.svg"
+								alt="line"
+								loading="lazy"
+							/>
+						</div>
+
 						<img
-							className={`transition-opacity duration-700 absolute z-1 scale-115 top-8 left-40 -rotate-2 ${
-								visible ? 'animation-move-right' : 'opacity-0'
-							}`}
-							src="https://www.nescafe.com/vn/themes/custom/nescafe/UI/build/images/zGbszVP.svg"
-							alt="line"
-							loading="lazy"
-						/>
-						<img
-							className={`transition-opacity duration-700 absolute right-[-4em] top-64 z-0 scale-70 ${
+							className={`transition-opacity duration-700 absolute right-[8em] top-72 z-0 w-36 ${
 								visible ? 'animation-move-right' : 'opacity-0'
 							}`}
 							src="/1.png"
@@ -132,19 +137,21 @@ const Feature1 = () => {
 							loading="lazy"
 						/>
 						<img
-							className="absolute left-[-1em] top-10 z-[-1] rotate-4 scale-130 h-70 border-4 border-white shadow-lg"
+							className="absolute left-[-2em] top-14 z-[-1] -rotate-3 scale-150 h-64 w-44 border-4 border-white shadow-lg"
 							src="/anh-1.jpg"
 							alt="nông dân"
 							loading="lazy"
 						/>
 					</picture>
-					<img
-						className={`transition-opacity duration-700 absolute z-[-4] scale-200 top-28 left-[-4em] ${
-							visible ? 'animation-move-left' : 'opacity-0'
-						}`}
-						src="/bg-nong-dan.webp"
-						loading="lazy"
-					/>
+					<div className="w-[360px]">
+						<img
+							className={`transition-opacity duration-700 absolute z-[-4] top-28 left-[-12em] scale-150 ${
+								visible ? 'animation-move-left' : 'opacity-0'
+							}`}
+							src="/bg-nong-dan.png"
+							loading="lazy"
+						/>
+					</div>
 				</div>
 			</div>
 			<div
@@ -166,8 +173,8 @@ const Feature2 = () => {
 
 	return (
 		<div ref={ref}>
-			<div className="mt-16">
-				<div className="translate-x-8 -translate-y-3">
+			<div className="mt-20">
+				<div className="translate-x-12 -translate-y-3">
 					<img
 						src="/bean.png"
 						alt="cf-bean"
@@ -187,14 +194,14 @@ const Feature2 = () => {
 					>
 						<path
 							d="M1.29688 1.69336C53.1774 93.6787 248.733 -14.6328 312.221 82.2264"
-							stroke="white"
+							stroke="#3d780a"
 							stroke-width="3"
 						></path>
 					</svg>
 				</div>
 
 				<div className="relative">
-					<div className="relative top-30 left-[28em] z-2 rounded-full bg-[#ffffff76] size-14 -rotate-4 cursor-pointer">
+					<div className="relative top-32 left-[27em] z-2 rounded-full bg-[#ffffff76] size-14 -rotate-4 cursor-pointer">
 						<FontAwesomeIcon
 							icon={faPlay}
 							size="xl"
@@ -202,16 +209,21 @@ const Feature2 = () => {
 						/>
 					</div>
 					<picture>
+						<div className="rotate-3">
+							<img
+								className={`transition-opacity duration-700 absolute z-1 scale-110 top-24 right-2 w-10 ${
+									visible
+										? 'animation-move-right'
+										: 'opacity-0'
+								}`}
+								src="https://www.nescafe.com/vn/themes/custom/nescafe/UI/build/images/3Lf_B7T.svg"
+								alt="line"
+								loading="lazy"
+							/>
+						</div>
+
 						<img
-							className={`transition-opacity duration-700 absolute z-1 scale-110 top-48 right-2 -rotate-6 ${
-								visible ? 'animation-move-right' : 'opacity-0'
-							}`}
-							src="https://www.nescafe.com/vn/themes/custom/nescafe/UI/build/images/3Lf_B7T.svg"
-							alt="line"
-							loading="lazy"
-						/>
-						<img
-							className={`transition-opacity duration-700 absolute left-[24em] z-0 scale-40 bottom-[-2em] ${
+							className={`transition-opacity duration-700 absolute left-[30em] z-0 w-44 bottom-0 ${
 								visible ? 'animation-move-right' : 'opacity-0'
 							}`}
 							src="/2.png"
@@ -219,7 +231,7 @@ const Feature2 = () => {
 							loading="lazy"
 						/>
 						<img
-							className="absolute left-[22em] top-[-2em] -rotate-4 h-90 w-60 z-[-2] border-4 border-white shadow-lg"
+							className="absolute left-[23em] top-[1em] rotate-3 h-80 w-52 z-[-2] border-4 border-white shadow-lg scale-125"
 							src="/anh-2.jpg"
 							alt="nông dân"
 							loading="lazy"
@@ -253,7 +265,7 @@ const Feature3 = () => {
 
 	return (
 		<div ref={ref}>
-			<div className="-mt-24">
+			<div className="-mt-10">
 				<div className="translate-x-36">
 					<img
 						src="/bean.png"
@@ -274,7 +286,7 @@ const Feature3 = () => {
 					>
 						<path
 							d="M354 1C285.588 118.746 109 26 0.999996 73"
-							stroke="white"
+							stroke="#3d780a"
 							stroke-width="3"
 						></path>
 					</svg>
@@ -289,16 +301,21 @@ const Feature3 = () => {
 						/>
 					</div>
 					<picture>
+						<div className="rotate-90">
+							<img
+								className={`transition-opacity duration-700 absolute z-1 scale-110 top-24 right-60 w-10 ${
+									visible
+										? 'animation-move-right'
+										: 'opacity-0'
+								}`}
+								src="https://www.nescafe.com/vn/themes/custom/nescafe/UI/build/images/3Lf_B7T.svg"
+								alt="line"
+								loading="lazy"
+							/>
+						</div>
+
 						<img
-							className={`transition-opacity duration-700 absolute z-1 scale-110 bottom-4 rotate-90 ${
-								visible ? 'animation-move-right' : 'opacity-0'
-							}`}
-							src="https://www.nescafe.com/vn/themes/custom/nescafe/UI/build/images/3Lf_B7T.svg"
-							alt="line"
-							loading="lazy"
-						/>
-						<img
-							className={`transition-opacity duration-700 absolute left-[-2em] z-0 scale-40 top-52 ${
+							className={`transition-opacity duration-700 absolute left-[3em] z-0 w-48 top-64 ${
 								visible ? 'animation-move-right' : 'opacity-0'
 							}`}
 							src="/3.png"
@@ -306,14 +323,14 @@ const Feature3 = () => {
 							loading="lazy"
 						/>
 						<img
-							className="absolute left-[-5em] top-[-0.5em] h-90 w-60 z-[-2] border-4 border-white shadow-lg"
+							className="absolute left-[-5em] top-0 h-80 w-56 z-[-2] border-4 border-white shadow-lg scale-110"
 							src="/anh-3.jpg"
 							alt="nông dân"
 							loading="lazy"
 						/>
 					</picture>
 					<img
-						className={`transition-opacity duration-700 absolute z-[-4] top-[-2em] left-[-12em] scale-80  ${
+						className={`transition-opacity duration-700 absolute z-[-4] top-0 left-[-11em] w-80  ${
 							visible ? 'animation-move-right' : 'opacity-0'
 						}`}
 						src="/bg-nha-san-xuat.webp"
@@ -340,8 +357,8 @@ const Feature4 = () => {
 
 	return (
 		<div ref={ref}>
-			<div className="-mt-20">
-				<div className="translate-x-8 -translate-y-3">
+			<div className="-mt-12">
+				<div className="translate-x-8 -translate-y-16">
 					<img
 						src="/bean.png"
 						alt="cf-bean"
@@ -361,14 +378,14 @@ const Feature4 = () => {
 					>
 						<path
 							d="M1.29688 1.69336C53.1774 93.6787 248.733 -14.6328 312.221 82.2264"
-							stroke="white"
+							stroke="#3d780a"
 							stroke-width="3"
 						></path>
 					</svg>
 				</div>
 
 				<div className="relative">
-					<div className="relative top-30 left-[28em] z-2 rounded-full bg-[#ffffff76] size-14 -rotate-4 cursor-pointer">
+					<div className="relative top-20 left-[27em] z-2 rounded-full bg-[#ffffff76] size-14 -rotate-4 cursor-pointer">
 						<FontAwesomeIcon
 							icon={faPlay}
 							size="xl"
@@ -377,7 +394,7 @@ const Feature4 = () => {
 					</div>
 					<picture>
 						<img
-							className={`transition-opacity duration-700 absolute z-1 scale-110 top-48 right-2 -rotate-6 ${
+							className={`transition-opacity duration-700 absolute z-1 scale-110 top-28 right-8 w-10 ${
 								visible ? 'animation-move-right' : 'opacity-0'
 							}`}
 							src="https://www.nescafe.com/vn/themes/custom/nescafe/UI/build/images/3Lf_B7T.svg"
@@ -385,7 +402,7 @@ const Feature4 = () => {
 							loading="lazy"
 						/>
 						<img
-							className={`transition-opacity duration-700 absolute left-[26em] z-0 scale-40 top-[10em] ${
+							className={`transition-opacity duration-700 absolute left-[32em] z-0 w-48 top-[13em] ${
 								visible ? 'animation-move-right' : 'opacity-0'
 							}`}
 							src="/4.png"
@@ -393,7 +410,7 @@ const Feature4 = () => {
 							loading="lazy"
 						/>
 						<img
-							className="absolute left-[22em] top-[-2em] -rotate-4 h-90 w-60 z-[-2] border-4 border-white shadow-lg"
+							className="absolute left-[22em] top-[-2em] -rotate-4 h-72 w-52 z-[-2] border-4 border-white shadow-lg scale-125"
 							src="/anh-4.jpg"
 							alt="nông dân"
 							loading="lazy"
@@ -408,7 +425,7 @@ const Feature4 = () => {
 					/>
 				</div>
 				<div
-					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative left-[-6em] top-[-2em] ${
+					className={`transition-opacity duration-700 flex flex-col gap-4 montserrat-font relative left-[-7em] top-[-5em] ${
 						visible ? 'animation-move-left' : 'opacity-0'
 					}`}
 				>
@@ -427,7 +444,7 @@ const Feature5 = () => {
 
 	return (
 		<div ref={ref}>
-			<div className="-mt-16">
+			<div className="-mt-28">
 				<div className="translate-x-36">
 					<img
 						src="/bean.png"
@@ -448,7 +465,7 @@ const Feature5 = () => {
 					>
 						<path
 							d="M354 1C285.588 118.746 109 26 0.999996 73"
-							stroke="white"
+							stroke="#3d780a"
 							stroke-width="3"
 						></path>
 					</svg>
@@ -463,16 +480,21 @@ const Feature5 = () => {
 						/>
 					</div>
 					<picture>
+						<div className="rotate-90">
+							<img
+								className={`transition-opacity duration-700 absolute z-1 scale-110 top-24 left-24 w-10 ${
+									visible
+										? 'animation-move-right'
+										: 'opacity-0'
+								}`}
+								src="https://www.nescafe.com/vn/themes/custom/nescafe/UI/build/images/3Lf_B7T.svg"
+								alt="line"
+								loading="lazy"
+							/>
+						</div>
+
 						<img
-							className={`transition-opacity duration-700 absolute z-1 scale-110 bottom-4 rotate-90 ${
-								visible ? 'animation-move-right' : 'opacity-0'
-							}`}
-							src="https://www.nescafe.com/vn/themes/custom/nescafe/UI/build/images/3Lf_B7T.svg"
-							alt="line"
-							loading="lazy"
-						/>
-						<img
-							className={`transition-opacity duration-700 absolute left-[-3em] z-0 scale-50 top-52 ${
+							className={`transition-opacity duration-700 absolute left-6 z-0 w-52 top-60 ${
 								visible ? 'animation-move-right' : 'opacity-0'
 							}`}
 							src="/5.png"
@@ -480,15 +502,15 @@ const Feature5 = () => {
 							loading="lazy"
 						/>
 						<img
-							className="absolute left-[-6em] top-[-1em] h-90 w-60 z-[-2] rotate-4 border-4 border-white shadow-lg"
+							className="absolute left-[-6em] top-0 h-90 w-60 z-[-2] rotate-2 border-4 border-white shadow-lg scale-110"
 							src="/anh-5.jpg"
 							alt="nông dân"
 							loading="lazy"
 						/>
 					</picture>
 					<img
-						className={`transition-opacity duration-700 absolute z-[-4] top-[-2em] left-[-16em] scale-70  ${
-							visible ? 'animation-move-right' : 'opacity-0'
+						className={`transition-opacity duration-700 absolute z-[-4] top-[-2em] left-[-14em] w-80  ${
+							visible ? 'animation-move-left' : 'opacity-0'
 						}`}
 						src="/bg-xay-ca-phe.webp"
 						loading="lazy"

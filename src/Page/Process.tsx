@@ -9,7 +9,7 @@ function Process() {
 	return (
 		<div>
 			<MoveTop />
-			<Header />
+			{/* <Header /> */}
 			<Home />
 			<Stories />
 			<Characteristics />

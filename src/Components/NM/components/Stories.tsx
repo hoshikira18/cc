@@ -56,7 +56,7 @@ const elements = [
 
 function Stories() {
   return (
-    <div className="bg-gradient-to-t from-transparent via-[#81b085] to-[#81b085] -translate-y-13">
+    <div className="bg-gradient-to-t from-transparent to-[#81b085]  -translate-y-[54px]">
       <section className="flex flex-col items-center gap-4 mx-[380px] montserrat-font mb-6">
         <span className="title py-2 pt-16">
           Khám phá câu chuyện của những nghệ nhân tạo nên từng tách cà phê mà

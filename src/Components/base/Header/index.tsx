@@ -25,13 +25,16 @@ const Header = (props: IProps) => {
 					/>
 				)}
 			</div>
-			<div className="flex justify-center mt-20">
+			{window.location.pathname !== '/process' && (
+				<div className="flex justify-center mt-20">
 				<img
 					src={'/banner.jpg'}
 					className="w-full object-cover
 					"
 				/>
 			</div>
+			)}
+			
 		</div>
 	);
 };
