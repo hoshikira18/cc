@@ -104,7 +104,7 @@ const NavBar = (props: IProps) => {
 			<div>
 				<Disclosure
 					as="nav"
-					className={`${hiddenNav ? 'opacity-0' : 'opacity-1'} fixed bg-white top-0 left-0 w-full z-[1000] py-3 lg:py-6 transition-all duration-300 `}
+					className={`${hiddenNav ? 'opacity-0' : 'opacity-1'} bg-white fixed top-0 left-0 w-full z-[1000] py-3 lg:py-6 transition-all duration-300 shadow-md `}
 				>
 					<div className="xl:px-16 max-w-screen-2xl mx-auto">
 						<div className="relative flex h-12 items-center justify-between w-full px-10">
@@ -153,9 +153,9 @@ const NavBar = (props: IProps) => {
 									<div className="flex-1 basis-[60%]">
 										<div className={styles.itemList2}>
 											{navigation.map((item) => (
-												<Link
+												<a
 													key={item.name}
-													to={item.href}
+													href={item.href}
 													aria-current={
 														item.current
 															? 'page'
@@ -169,7 +169,7 @@ const NavBar = (props: IProps) => {
 													)}
 												>
 													{item.name}
-												</Link>
+												</a>
 											))}
 										</div>
 									</div>

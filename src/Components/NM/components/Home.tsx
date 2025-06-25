@@ -1,5 +1,5 @@
-import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Home() {
   return (
@@ -13,16 +13,18 @@ function Home() {
         <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-b from-transparent to-[#112201ab] z-10"></div>
       </div>
 
-      <div className="flex flex-col items-center gap-4 text-white -translate-y-24 z-20 relative">
-        <FontAwesomeIcon
-          icon={faArrowDownLong}
-          size="1x"
-          className="animate-bounce"
-        />
-        <div className="font-medium text-sm">Kéo xuống để khám phá thêm</div>
-      </div>
-    </div>
-  );
+			<div className="flex flex-col items-center gap-4 text-white -translate-y-24 z-20 relative">
+				<FontAwesomeIcon
+					icon={faArrowDownLong}
+					size="1x"
+					className="animate-bounce"
+				/>
+				<div className="font-medium text-sm">
+					Kéo xuống để khám phá thêm
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default Home;

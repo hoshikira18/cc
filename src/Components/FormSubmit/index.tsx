@@ -1,8 +1,5 @@
 import React from 'react';
-import { Select } from 'antd';
 import FormLayout from '../base/Form';
-
-const { Option } = Select;
 
 const FormSubmit: React.FC = () => {
 	return (

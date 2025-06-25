@@ -19,7 +19,11 @@ const FoodItem = () => {
 							className="text-center flex justify-center p-3"
 							key={img.id}
 						>
-							<img src={img.url} className="max-w-[50%] h-full" />
+							<img
+								src={img.url}
+								alt={img.url}
+								className="max-w-[50%] h-full"
+							/>
 						</div>
 					);
 				})}

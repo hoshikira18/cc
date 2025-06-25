@@ -52,10 +52,6 @@ const elements = [
 		image: '/5.png',
 		name: 'Ảnh 5',
 	},
-	{
-		image: '/6.png',
-		name: 'Ảnh 6',
-	},
 ];
 
 function Stories() {
@@ -78,7 +74,7 @@ function Stories() {
 				<span className="title text-center py-8 px-16">
 					Gặp Gỡ Những Người Làm Nên Kháng Tinh An
 				</span>
-				<div className="flex items-center gap-16 lg:gap-20 flex-row flex-wrap lg:flex-nowrap justify-center w-full px-24">
+				<div className="flex items-center gap-x-16 lg:gap-20 flex-row flex-wrap lg:flex-nowrap justify-center w-full px-24">
 					{elements.map((item, index) => (
 						<Element key={index} elements={item} index={index} />
 					))}

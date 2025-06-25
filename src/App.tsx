@@ -29,6 +29,7 @@ import ScrollToTop from './Components/ScrollToTop';
 import ProductScreen from './Page/ProductScreen';
 import ProductDetailPage from './Page/ProductDetailScreen';
 import Process from './Page/Process';
+import ProductDetailPage1 from './Page/ProductDetailScreen/index1';
 
 const App: React.FC = () => {
 	return (
@@ -40,8 +41,12 @@ const App: React.FC = () => {
 						<Route index element={<Main />} />
 						<Route path="products" element={<ProductScreen />} />
 						<Route
-							path="/products/:id"
+							path="/products/id"
 							element={<ProductDetailPage />}
+						/>
+						<Route
+							path="/products/id1"
+							element={<ProductDetailPage1 />}
 						/>
 						<Route path="process" element={<Process />} />
 						<Route

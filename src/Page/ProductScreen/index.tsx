@@ -7,14 +7,16 @@ function ProductScreen() {
 			name: 'Tên sản phẩm 1',
 			weight: 'Hộp 750g',
 			price: '620.000 đ',
-			image: '/placeholder.svg?height=200&width=200',
+			image: '/P1.png',
+			link: '/products/id',
 		},
 		{
 			id: 2,
 			name: 'Tên sản phẩm 2',
 			weight: 'Hộp 750g',
 			price: '620.000 đ',
-			image: '/placeholder.svg?height=200&width=200',
+			image: '/p2.png',
+			link: '/products/id1',
 		},
 	];
 
@@ -88,9 +90,7 @@ function ProductScreen() {
 								<div className="p-6 text-center">
 									<div className="mb-6">
 										<img
-											src={
-												'https://random-image-pepebigotes.vercel.app/api/random-image'
-											}
+											src={product.image}
 											alt={product.name}
 											className="w-full rounded-lg mb-20"
 										/>
@@ -106,10 +106,10 @@ function ProductScreen() {
 									</p>
 
 									<Link
-										to={'/products/id'}
+										to={product.link}
 										className="bg-[#5A9F51] hover:bg-green-700 text-white px-6 py-2 rounded-full font-medium transition-colors duration-200"
 									>
-										Mua ngay
+										Xem thêm
 									</Link>
 								</div>
 							</div>

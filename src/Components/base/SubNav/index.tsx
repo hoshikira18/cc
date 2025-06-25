@@ -87,7 +87,7 @@ const SubNavBar = (props: IProps) => {
 									<button className="text-black font-bold text-4xl ">
 										<Link to="/">
 											<img
-												src={'./logo.png'}
+												src={'/logo.png'}
 												alt="logo"
 												width={200}
 												height={50}
@@ -115,7 +115,7 @@ const SubNavBar = (props: IProps) => {
 										<button className="text-black font-bold text-4xl ">
 											<Link to="/">
 												<img
-													src={'./logo.png'}
+													src={'/logo.png'}
 													alt="logo"
 													width={200}
 													height={50}
@@ -123,7 +123,7 @@ const SubNavBar = (props: IProps) => {
 											</Link>
 										</button>
 									</div>
-									<div className="flex-1 basis-[70%]">
+									<div className="flex-1 basis-[60%]">
 										<div className={styles.itemList2}>
 											{navigation.map((item) => (
 												<Link
