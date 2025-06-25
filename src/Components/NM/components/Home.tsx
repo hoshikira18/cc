@@ -8,7 +8,7 @@ function Home() {
         <img
           src="/desktop.jpg"
           alt="photo"
-          className="w-full h-full object-cover object-center mt-20"
+          className="w-full h-full object-cover object-center mt-16 md:mt-20"
         />
         <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-b from-transparent to-[#112201ab] z-10"></div>
       </div>
