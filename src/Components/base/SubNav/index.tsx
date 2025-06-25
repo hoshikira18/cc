@@ -109,7 +109,7 @@ const SubNavBar = (props: IProps) => {
 									</DisclosureButton>
 								</div>
 							</div>
-							<div className="flex-1 basis-[70%] hidden lg:block max-w-screen-xl">
+							<div className="flex-1 basis-[80%] hidden lg:block max-w-screen-xl">
 								<div className="flex justify-center items-center">
 									<div className="flex flex-shrink-0 items-center flex-1 basis-[30%]">
 										<button className="text-black font-bold text-4xl ">
@@ -123,7 +123,7 @@ const SubNavBar = (props: IProps) => {
 											</Link>
 										</button>
 									</div>
-									<div className="flex-1 basis-[60%]">
+									<div className="flex-1 basis-[80%]">
 										<div className={styles.itemList2}>
 											{navigation.map((item) => (
 												<Link
