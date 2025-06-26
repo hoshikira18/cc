@@ -60,7 +60,7 @@ function ProductScreen() {
 	];
 
 	return (
-		<div className="min-h-screen bg-[##FEFAF5]">
+		<div className="min-h-screen bg-[##FEFAF5] pt-20">
 			{/* Breadcrumb */}
 			<div className="mt-20">
 				<div className="max-w-7xl mx-auto px-4 py-3">

@@ -26,6 +26,7 @@ const Header = (props: IProps) => {
 				)}
 			</div>
 			{window.location.pathname !== '/process' &&
+				window.location.pathname !== '/products' &&
 				window.location.pathname !== '/products/id' &&
 				window.location.pathname !== '/products/id1' && (
 					<div className="flex justify-center mt-20">
