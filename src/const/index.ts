@@ -1,16 +1,16 @@
 export const navigation = [
-	{ name: 'About Us', href: '#', current: true },
+	{ name: 'Về chúng tôi', href: '#', current: true },
 	{
-		name: 'Product',
+		name: 'Sản phẩm',
 		href: '/products',
 		current: true,
 	},
 	{
-		name: 'Process',
+		name: 'Gặp gỡ người tạo nên sản phẩm',
 		href: '/process',
 		current: true,
 	},
-	{ name: 'Contact Us', href: '#', current: false },
+	{ name: 'Liên hệ chúng tôi', href: '#', current: false },
 ];
 export const itemInfo1 = [
 	{

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import contact from "../data/contact";
 
 
-const title = ["About us", "Product", "Process", "Contact us"];
+const title = ["Về chúng tôi", "Sản phẩm", "Gặp gỡ người tạo nên sản phẩm", "Liên hệ chúng tôi"];
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);

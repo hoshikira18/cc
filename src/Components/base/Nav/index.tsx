@@ -136,7 +136,7 @@ const NavBar = (props: IProps) => {
 									</DisclosureButton>
 								</div>
 							</div>
-							<div className="flex-1 basis-[70%] hidden lg:block">
+							<div className="flex-1 basis-[80%] hidden lg:block">
 								<div className="flex justify-center items-center">
 									<div className="flex flex-shrink-0 items-center flex-1 basis-[30%]">
 										<button className="text-black font-bold text-4xl ">
@@ -150,7 +150,7 @@ const NavBar = (props: IProps) => {
 											</Link>
 										</button>
 									</div>
-									<div className="flex-1 basis-[60%]">
+									<div className="flex-1 basis-[80%]">
 										<div className={styles.itemList2}>
 											{navigation.map((item) => (
 												<a
@@ -246,7 +246,7 @@ const NavBar = (props: IProps) => {
 									</DisclosureButton>
 								</div>
 							</div>
-							<div className="flex-1 basis-[70%] hidden lg:block">
+							<div className="flex-1 basis-[80%] hidden lg:block">
 								<div className="flex justify-center items-center">
 									<div className="flex flex-shrink-0 items-center flex-1 basis-[30%]">
 										<button className="text-black font-bold text-4xl ">
@@ -260,7 +260,7 @@ const NavBar = (props: IProps) => {
 											</Link>
 										</button>
 									</div>
-									<div className="flex-1 basis-[60%]">
+									<div className="flex-1 basis-[80%]">
 										<div className={styles.itemList2}>
 											{navigation.map((item) => (
 												<Link

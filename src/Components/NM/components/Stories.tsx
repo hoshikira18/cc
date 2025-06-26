@@ -24,9 +24,9 @@ const Element = ({ elements, index }: ElementProps) => {
 					className={`${imageClass.trim()} mt-6`}
 				/>
 			</div>
-			<p className="text-center -translate-y-8 font-medium">
+			{/* <p className="text-center -translate-y-8 font-medium">
 				{elements.name}
-			</p>
+			</p> */}
 		</div>
 	);
 };
@@ -74,7 +74,7 @@ function Stories() {
 				<span className="title text-center py-8 px-16">
 					Gặp Gỡ Những Người Làm Nên Kháng Tinh An
 				</span>
-				<div className="flex items-center gap-16 lg:gap-20 mb-8 flex-row flex-wrap lg:flex-nowrap justify-center w-full px-24">
+				<div className="flex items-center gap-x-16 lg:gap-20 flex-row flex-wrap lg:flex-nowrap justify-center w-full px-24">
 					{elements.map((item, index) => (
 						<Element key={index} elements={item} index={index} />
 					))}

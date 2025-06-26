@@ -135,8 +135,9 @@ html {
     offset-rotate: 350deg;
     animation: moveAlong 3s ease-in-out forwards;
     position: absolute;
-    width: 52px;
+    width: 56px;
     height: auto;
+    z-index: 99;
   }
   
   .bean-motion-2 {
@@ -146,8 +147,9 @@ html {
     offset-rotate: 350deg;
     animation: moveAlong 3s ease-in-out forwards;
     position: absolute;
-    width: 52px;
+    width: 56px;
     height: auto;
+    z-index: 99;
   }
   
   .bean-motion-3 {
@@ -157,8 +159,9 @@ html {
     offset-rotate: 350deg;
     animation: moveAlong 3s ease-in-out forwards;
     position: absolute;
-    width: 52px;
+    width: 56px;
     height: auto;
+    z-index: 99;
   }
 
   .bean-motion-1-mobile {
@@ -168,8 +171,9 @@ html {
     offset-rotate: 350deg;
     animation: moveAlong 3s ease-in-out forwards;
     position: absolute;
-    width: 52px;
+    width: 56px;
     height: auto;
+    z-index: 99;
   }
 
   .bean-motion-2-mobile {
@@ -179,8 +183,9 @@ html {
     offset-rotate: 350deg;
     animation: moveAlong 3s ease-in-out forwards;
     position: absolute;
-    width: 52px;
+    width: 56px;
     height: auto;
+    z-index: 99;
   }
   
   
