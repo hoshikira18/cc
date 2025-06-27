@@ -16,7 +16,6 @@ import {
 	BiSolidDashboard,
 } from 'react-icons/bi';
 import React, { useEffect, useState } from 'react';
-import { Facebook } from 'lucide-react';
 
 interface IconButtonProps {
 	Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
@@ -118,7 +117,7 @@ const NavBar = (props: IProps) => {
 												alt="logo"
 												width={200}
 												height={50}
-												className="h-10 w-auto scale-[2] lg:scale-100 lg:h-40"
+												className="h-10 w-auto scale-[1.5] lg:scale-100 lg:h-32"
 											/>
 										</Link>
 									</button>
@@ -147,7 +146,7 @@ const NavBar = (props: IProps) => {
 													alt="logo"
 													width={200}
 													height={50}
-													className="h-10 scale-[3] w-auto lg:scale-100 lg:h-40"
+													className="h-10 scale-[1.5] w-auto lg:scale-100 lg:h-32"
 												/>
 											</Link>
 										</button>
@@ -180,26 +179,36 @@ const NavBar = (props: IProps) => {
 							<div className="ml-6 justify-around flex-1 basis-[30%] hidden lg:block">
 								<div className="flex items-center justify-center">
 									<button className="px-5 py-2 rounded-xl bg-[#3E790A] text-white">
-										Make contact
+										Giỏ hàng
 									</button>
-									<button className="mx-2 xl:mr-4">
+									<a
+										href="https://www.facebook.com/profile.php?id=61577276590314"
+										target="_blank"
+										className="inline-block mx-2 xl:mr-4"
+									>
 										<IconButton
 											Icon={BiLogoFacebook}
 											customColor="#333"
 										/>
-									</button>
-									<button className="mx-2 xl:mr-4">
+									</a>
+									<a
+										href="https://www.instagram.com/khangtinhan2605/ "
+										className="inline-block mx-2 xl:mr-4"
+									>
 										<IconButton
-											Icon={BiLogoLinkedin}
+											Icon={BiLogoInstagram}
 											customColor="#333"
 										/>
-									</button>
-									<button className="mx-2 xl:mr-4">
+									</a>
+									<a
+										href="https://www.tiktok.com/@user734347781176129?lang=en"
+										className="inline-block mx-2 xl:mr-4"
+									>
 										<IconButton
 											Icon={BiLogoTiktok}
 											customColor="#333"
 										/>
-									</button>
+									</a>
 
 									{isLoggedIn && (
 										<Link to="/admin">
@@ -230,7 +239,7 @@ const NavBar = (props: IProps) => {
 												alt="logo"
 												width={200}
 												height={50}
-												className="h-10 w-auto scale-[2] lg:scale-100 lg:w-40"
+												className="h-10 w-auto scale-[1.5] lg:scale-100 lg:w-32"
 											/>
 										</Link>
 									</button>
@@ -259,6 +268,7 @@ const NavBar = (props: IProps) => {
 													alt="logo"
 													width={200}
 													height={50}
+													className="h-10 scale-[1.5] w-auto lg:scale-100 lg:h-32"
 												/>
 											</Link>
 										</button>
@@ -291,26 +301,36 @@ const NavBar = (props: IProps) => {
 							<div className="ml-6 justify-around flex-1 basis-[30%] hidden lg:block">
 								<div className="flex items-center justify-center">
 									<button className="px-5 py-2 rounded-xl bg-[#3E790A] text-white">
-										Make contact
+										Giỏ hàng
 									</button>
-									<button className="mx-2 xl:mr-4">
+									<a
+										href="https://www.facebook.com/profile.php?id=61577276590314"
+										target="_blank"
+										className="inline-block mx-2 xl:mr-4"
+									>
 										<IconButton
 											Icon={BiLogoFacebook}
 											customColor="#333"
 										/>
-									</button>
-									<button className="mx-2 xl:mr-4">
+									</a>
+									<a
+										href="https://www.instagram.com/khangtinhan2605/ "
+										className="inline-block mx-2 xl:mr-4"
+									>
 										<IconButton
-											Icon={BiLogoLinkedin}
+											Icon={BiLogoInstagram}
 											customColor="#333"
 										/>
-									</button>
-									<button className="mx-2 xl:mr-4">
+									</a>
+									<a
+										href="https://www.tiktok.com/@user734347781176129?lang=en"
+										className="inline-block mx-2 xl:mr-4"
+									>
 										<IconButton
 											Icon={BiLogoTiktok}
 											customColor="#333"
 										/>
-									</button>
+									</a>
 
 									{isLoggedIn && (
 										<Link to="/admin">
@@ -349,30 +369,34 @@ const NavBar = (props: IProps) => {
 
 							<div className="bg-white h-[1px] w-[15vw] my-10"></div>
 							<div>
-								<button className="mx-2 xl:mr-4">
+								<a
+									href="https://www.facebook.com/profile.php?id=61577276590314"
+									target="_blank"
+									className="inline-block mx-2 xl:mr-4"
+								>
 									<IconButton
 										Icon={BiLogoFacebook}
-										customColor="#fff"
+										customColor="#333"
 									/>
-								</button>
-								<button className="mx-2 xl:mr-4">
-									<IconButton
-										Icon={BiLogoLinkedin}
-										customColor="#fff"
-									/>
-								</button>
-								<button className="mx-2 xl:mr-4">
+								</a>
+								<a
+									href="https://www.instagram.com/khangtinhan2605/ "
+									className="inline-block mx-2 xl:mr-4"
+								>
 									<IconButton
 										Icon={BiLogoInstagram}
-										customColor="#fff"
+										customColor="#333"
 									/>
-								</button>
-								<button className="mx-2 xl:mr-4">
+								</a>
+								<a
+									href="https://www.tiktok.com/@user734347781176129?lang=en"
+									className="inline-block mx-2 xl:mr-4"
+								>
 									<IconButton
-										Icon={BiLogoGmail}
-										customColor="#fff"
+										Icon={BiLogoTiktok}
+										customColor="#333"
 									/>
-								</button>
+								</a>
 							</div>
 						</div>
 					</div>

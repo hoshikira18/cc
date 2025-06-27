@@ -4,17 +4,17 @@ function ProductScreen() {
 	const products = [
 		{
 			id: 1,
-			name: 'Tên sản phẩm 1',
-			weight: 'Hộp 750g',
-			price: '620.000 đ',
+			name: ' Trà Bí Thơm',
+			weight: 'Hộp 500',
+			price: ' 200.000đ',
 			image: '/P1.png',
 			link: '/products/id',
 		},
 		{
 			id: 2,
-			name: 'Tên sản phẩm 2',
-			weight: 'Hộp 750g',
-			price: '620.000 đ',
+			name: 'Tinh Bột Kháng',
+			weight: 'Hộp 500g',
+			price: ' 265.000đ',
 			image: '/p2.png',
 			link: '/products/id1',
 		},
@@ -56,6 +56,18 @@ function ProductScreen() {
 			description:
 				'Tình trạng khăng lên men sinh ra các axit béo chuỗi ngắn giúp ức chế sự phát triển của hại khuẩn. Từ đó cải thiện vấn đề đường ruột.',
 			image: './quality1.webp',
+		},
+	];
+
+	const customerReviews = [
+		{
+			review: `Cảm giác nhẹ bụng, dễ tiêu hơn hẳn sau vài ngày dùng đều đặn. Trước đây tôi hay bị đầy hơi, chậm tiêu sau mỗi bữa ăn, nhưng từ khi bổ sung tinh bột kháng vào bữa sáng, tôi thấy bụng nhẹ hơn, không còn cảm giác nặng nề hay ậm ạch.`,
+		},
+		{
+			review: `Giúp kiểm soát đường huyết tốt hơn. Tôi là người tiền tiểu đường nên rất quan tâm đến chỉ số đường huyết. Sau khoảng 2 tuần sử dụng đều đặn 1 muỗng tinh bột kháng pha nước mỗi sáng, chỉ số đường huyết ổn định hơn, không dao động thất thường như trước.`,
+		},
+		{
+			review: `Vị thanh mát, dễ chịu, và rất thơm. Trà có vị ngọt hậu nhẹ nhàng từ bí và thơm tự nhiên của các thành phần dược liệu, không gắt, không chát như nhiều loại trà thảo mộc khác. Dễ uống cả nóng lẫn lạnh.`,
 		},
 	];
 
@@ -161,38 +173,20 @@ function ProductScreen() {
 							}}
 							navigation={false} // Disable the default navigation (as we're using custom buttons)
 						>
-							<SwiperSlide>
-								<div className="w-full h-[600px] flex items-center justify-center px-20 space-x-20">
-									<img
-										src="./avt.png"
-										alt="Product 1"
-										className="w-1/3 rounded-full"
-									/>
-									<p className="w-2/3 text-2xl font-semibold">
-										“We survey employees, aligning our
-										offering to meet their needs and
-										preferences. We can offer gluten-free,
-										vegetarian, vegan, paleo, nut free,
-										kosher and halal options.”
-									</p>
-								</div>
-							</SwiperSlide>
-							<SwiperSlide>
-								<div className="w-full h-[600px] flex items-center justify-center px-20 space-x-20">
-									<img
-										src="./avt.png"
-										alt="Product 1"
-										className="w-1/3 rounded-full"
-									/>
-									<p className="w-2/3 text-2xl font-semibold">
-										“We survey employees, aligning our
-										offering to meet their needs and
-										preferences. We can offer gluten-free,
-										vegetarian, vegan, paleo, nut free,
-										kosher and halal options.”
-									</p>
-								</div>
-							</SwiperSlide>
+							{customerReviews.map((review, index) => (
+								<SwiperSlide key={index}>
+									<div className="w-full h-[600px] flex items-center justify-center px-20 space-x-20">
+										<img
+											src="./avt.png"
+											alt="Product 1"
+											className="w-1/3 rounded-full"
+										/>
+										<p className="w-2/3 text-2xl font-semibold">
+											{review.review}
+										</p>
+									</div>
+								</SwiperSlide>
+							))}
 						</Swiper>
 					</div>
 				</div>

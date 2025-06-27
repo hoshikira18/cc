@@ -35,86 +35,6 @@ function ProductSlider() {
 				navigation={false} // Disable the default navigation (as we're using custom buttons)
 			>
 				<SwiperSlide>
-					<div className="w-full flex flex-col lg:flex-row items-center justify-center py-20 px-5 lg:px-0">
-						<div className="relative w-full md:w-2/3 lg:w-1/2 flex items-center justify-center">
-							<img
-								src="./P1/P.png"
-								alt="Product 1"
-								className="w-full h-full object-contain"
-							/>
-							<img
-								src="./P1/I1.png"
-								alt=""
-								className="absolute -bottom-10 left-0 animate-bounce w-40"
-							/>
-							<img
-								src="./P1/I2.png"
-								alt=""
-								className="absolute -bottom-10 right-0 animate-bounce w-40"
-							/>
-							<img
-								src="./P1/I3.png"
-								alt=""
-								className="absolute top-20 right-28 animate-bounce w-32"
-							/>
-						</div>
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5 mt-4 w-full lg:w-1/2 px-10">
-							<div className="flex items-center">
-								<img
-									src="./P1/D1.png"
-									alt=""
-									className="w-28 aspect-square object-cover"
-								/>
-								<p className="text-sm">
-									Hỗ trợ giảm cân, kiểm soát vóc dáng → Hàm
-									lượng calo thấp, không chứa chất béo, giúp
-									tạo cảm giác no và hỗ trợ quá trình trao đổi
-									chất, phù hợp với người đang ăn kiêng.
-								</p>
-							</div>
-							<div className="flex items-center">
-								<img
-									src="./P1/D2.png"
-									alt=""
-									className="w-28 aspect-square object-cover"
-								/>
-								<p className="text-sm">
-									Hỗ trợ tiêu hóa → Nhẹ nhàng với hệ tiêu hóa,
-									giúp giảm cảm giác đầy bụng, khó tiêu, làm
-									dịu ruột và dạ dày.
-								</p>
-							</div>
-							<div className="flex items-center">
-								<img
-									src="./P1/D3.png"
-									alt=""
-									className="w-28 aspect-square object-cover"
-								/>
-								<p className="text-sm">
-									Giúp làm đẹp da, giảm mụn → Thành phần tự
-									nhiên giàu nước và chất chống oxy hóa giúp
-									cấp nước, thanh lọc máu, hỗ trợ làm dịu da
-									và cải thiện tình trạng mụn do nóng gan.
-								</p>
-							</div>
-							<div className="flex items-center">
-								<img
-									src="./P1/D4.png"
-									alt=""
-									className="w-28 aspect-square object-cover"
-								/>
-								<p className="text-sm">
-									Thanh nhiệt, giải độc cơ thể → Giúp làm mát
-									gan, giảm nóng trong, hỗ trợ thanh lọc cơ
-									thể tự nhiên, đặc biệt hiệu quả trong những
-									ngày nắng nóng hoặc khi ăn nhiều đồ cay, dầu
-									mỡ.
-								</p>
-							</div>
-						</div>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
 					<div className="w-full flex flex-col lg:flex-row items-center justify-center py-20">
 						<div className="relative w-full md:w-2/3 lg:w-1/2 flex items-center justify-center">
 							<img
@@ -235,6 +155,86 @@ function ProductSlider() {
 									Làm chậm quá trình hấp thu đường, tăng độ
 									nhạy insulin, giúp duy trì đường huyết ổn
 									định sau ăn.
+								</p>
+							</div>
+						</div>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div className="w-full flex flex-col lg:flex-row items-center justify-center py-20 px-5 lg:px-0">
+						<div className="relative w-full md:w-2/3 lg:w-1/2 flex items-center justify-center">
+							<img
+								src="./P1/P.png"
+								alt="Product 1"
+								className="w-full h-full object-contain"
+							/>
+							<img
+								src="./P1/I1.png"
+								alt=""
+								className="absolute -bottom-10 left-0 animate-bounce w-40"
+							/>
+							<img
+								src="./P1/I2.png"
+								alt=""
+								className="absolute -bottom-10 right-0 animate-bounce w-40"
+							/>
+							<img
+								src="./P1/I3.png"
+								alt=""
+								className="absolute top-20 right-28 animate-bounce w-32"
+							/>
+						</div>
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5 mt-4 w-full lg:w-1/2 px-10">
+							<div className="flex items-center">
+								<img
+									src="./P1/D1.png"
+									alt=""
+									className="w-28 aspect-square object-cover"
+								/>
+								<p className="text-sm">
+									Hỗ trợ giảm cân, kiểm soát vóc dáng → Hàm
+									lượng calo thấp, không chứa chất béo, giúp
+									tạo cảm giác no và hỗ trợ quá trình trao đổi
+									chất, phù hợp với người đang ăn kiêng.
+								</p>
+							</div>
+							<div className="flex items-center">
+								<img
+									src="./P1/D2.png"
+									alt=""
+									className="w-28 aspect-square object-cover"
+								/>
+								<p className="text-sm">
+									Hỗ trợ tiêu hóa → Nhẹ nhàng với hệ tiêu hóa,
+									giúp giảm cảm giác đầy bụng, khó tiêu, làm
+									dịu ruột và dạ dày.
+								</p>
+							</div>
+							<div className="flex items-center">
+								<img
+									src="./P1/D3.png"
+									alt=""
+									className="w-28 aspect-square object-cover"
+								/>
+								<p className="text-sm">
+									Giúp làm đẹp da, giảm mụn → Thành phần tự
+									nhiên giàu nước và chất chống oxy hóa giúp
+									cấp nước, thanh lọc máu, hỗ trợ làm dịu da
+									và cải thiện tình trạng mụn do nóng gan.
+								</p>
+							</div>
+							<div className="flex items-center">
+								<img
+									src="./P1/D4.png"
+									alt=""
+									className="w-28 aspect-square object-cover"
+								/>
+								<p className="text-sm">
+									Thanh nhiệt, giải độc cơ thể → Giúp làm mát
+									gan, giảm nóng trong, hỗ trợ thanh lọc cơ
+									thể tự nhiên, đặc biệt hiệu quả trong những
+									ngày nắng nóng hoặc khi ăn nhiều đồ cay, dầu
+									mỡ.
 								</p>
 							</div>
 						</div>

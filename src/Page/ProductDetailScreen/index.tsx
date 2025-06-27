@@ -13,7 +13,7 @@ export default function ProductDetailPage() {
 
 					<div className="lg:w-1/2 p-8 space-y-6">
 						<h1 className="text-2xl lg:text-3xl font-bold text-gray-800 leading-tight">
-							Trà Bí Thom Baka - Bồi Bổ, Tăng Cường Sức Khỏe
+							Trà Bí Thơm Baka - Bồi Bổ, Tăng Cường Sức Khỏe
 						</h1>
 
 						<p className="text-gray-700 leading-relaxed">

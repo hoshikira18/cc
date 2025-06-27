@@ -94,12 +94,12 @@ function Footer() {
 						key={index}
 						className="flex flex-col gap-4 lg:col-span-2"
 					>
-						<div className="font-semibold dancing-font text-xl">
+						<div className="font-semibold dancing-font text-4xl">
 							{item.title}
 						</div>
 						<div className="flex flex-col gap-2">
 							{item.subTitle.map((sub, index) => (
-								<div key={index} className="text-xs">
+								<div key={index} className="">
 									<a href={sub.link}>{sub.name}</a>
 								</div>
 							))}
@@ -107,14 +107,11 @@ function Footer() {
 					</div>
 				))}
 				<div className="flex flex-col gap-2 col-span-1">
-					<span className="font-semibold dancing-font text-xl mb-2">
+					<span className="font-semibold dancing-font text-4xl mb-2">
 						Mạng xã hội
 					</span>
 					{contact.map((item, index) => (
-						<div
-							key={index}
-							className="flex gap-4 items-center text-xs"
-						>
+						<div key={index} className="flex gap-4 items-center">
 							<img
 								src={item.image}
 								alt="akjsnjkcnasc"

@@ -9,6 +9,9 @@ interface IconButtonProps {
 	Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 	customColor?: string;
 }
+import styles from './styles.module.css';
+import { BiLogoFacebook, BiLogoInstagram, BiLogoTiktok } from 'react-icons/bi';
+
 const HomePage = () => {
 	const location = useLocation();
 	const isHomePage = location.pathname === '/' ? 'main' : 'sub';
@@ -28,33 +31,28 @@ const HomePage = () => {
 			<ChatBox />
 			<div className="fixed bottom-6 right-6 flex flex-col space-y-3 z-50">
 				<a
-					href="https://m.me/yourpage"
+					href="https://www.facebook.com/profile.php?id=61577276590314"
 					target="_blank"
-					title="Messenger"
+					title="Facebook"
 					className="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-blue-100"
 				>
-					<img
-						src="/messenger.png"
-						alt="Messenger"
-						className="w-6 h-6"
-					/>
+					<IconButton Icon={BiLogoFacebook} customColor="#333" />
 				</a>
 
 				<a
-					href="https://zalo.me/yourzaloid"
+					href="https://www.instagram.com/khangtinhan2605/ "
 					target="_blank"
 					title="Zalo"
 					className="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-blue-100"
 				>
-					<img src="/zalo.png" alt="Zalo" className="w-6 h-6" />
+					<IconButton Icon={BiLogoInstagram} customColor="#333" />
 				</a>
 
 				<a
-					href="tel:0123456789"
-					title="Call"
+					href="https://www.tiktok.com/@user734347781176129?lang=en"
 					className="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-green-100"
 				>
-					<img src="/phone.png" alt="Phone" className="w-6 h-6" />
+					<IconButton Icon={BiLogoTiktok} customColor="#333" />
 				</a>
 			</div>
 			<div className="relative bg-[#FEFAF5]">
@@ -71,3 +69,10 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+const IconButton: React.FC<IconButtonProps> = ({ Icon, customColor }) => (
+	<div className={styles.iconWrapper}>
+		<Icon className={`${styles.icon}`} style={{ color: customColor }} />
+		<Icon className={`${styles.iconWhite}`} />
+	</div>
+);
