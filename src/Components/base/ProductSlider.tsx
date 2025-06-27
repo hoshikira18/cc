@@ -7,7 +7,7 @@ function ProductSlider() {
 	const swiperRef = useRef<SwiperClass | null>(null); // Reference to the swiper instance
 
 	return (
-		<div className="rounded-2xl relative mb-60">
+		<div className="rounded-2xl relative mb-0 lg:mb-60">
 			{/* Custom left arrow */}
 			<button
 				className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black text-3xl z-50"
@@ -35,8 +35,8 @@ function ProductSlider() {
 				navigation={false} // Disable the default navigation (as we're using custom buttons)
 			>
 				<SwiperSlide>
-					<div className="w-full flex items-center justify-center py-20">
-						<div className="relative w-1/2 flex items-center justify-center">
+					<div className="w-full flex flex-col lg:flex-row items-center justify-center py-20 px-5 lg:px-0">
+						<div className="relative w-full md:w-2/3 lg:w-1/2 flex items-center justify-center">
 							<img
 								src="./P1/P.png"
 								alt="Product 1"
@@ -58,7 +58,7 @@ function ProductSlider() {
 								className="absolute top-20 right-28 animate-bounce w-32"
 							/>
 						</div>
-						<div className="flex flex-col mt-4 w-1/2 px-10">
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5 mt-4 w-full lg:w-1/2 px-10">
 							<div className="flex items-center">
 								<img
 									src="./P1/D1.png"
@@ -115,8 +115,8 @@ function ProductSlider() {
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div className="w-full flex items-center justify-center py-20">
-						<div className="relative w-1/2 flex items-center justify-center">
+					<div className="w-full flex flex-col lg:flex-row items-center justify-center py-20">
+						<div className="relative w-full md:w-2/3 lg:w-1/2 flex items-center justify-center">
 							<img
 								src="./P2/P.png"
 								alt="Product 1"
@@ -138,7 +138,7 @@ function ProductSlider() {
 								className="absolute top-10 left-60 animate-bounce w-32"
 							/>
 						</div>
-						<div className="flex flex-col mt-4 w-1/2 px-10">
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5 mt-4 w-full lg:w-1/2 px-10 ">
 							<div className="flex items-center">
 								<img
 									src="./quality1.webp"

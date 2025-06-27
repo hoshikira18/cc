@@ -4,24 +4,41 @@ const Main = () => {
 	return (
 		<>
 			<div className="lg:px-28 max-w-screen-2xl mx-auto">
-				<div className="my-40 relative">
+				<div className="my-10 md:my-20 lg:my-40 relative">
 					<img
-						src="/home1.png"
-						className="w-full object-cover"
+						src="/home2.png"
+						className="w-full h-[500px] md:h-[600px] lg:h-auto object-cover"
 						alt="Banner"
 					/>
-					<div className="absolute bottom-24 left-0 right-0 text-center">
-						<button className="px-10 py-2 bg-[#5D9A4A] rounded-lg text-xl font-semibold animate-bounce text-white">
-							Xem thêm
-						</button>
+					<div className="absolute inset-0 flex flex-col items-center justify-center text-center text-[#4b642b]">
+						<div className="bg-white/90 max-w-screen-lg p-5 pb-10 rounded-lg">
+							<h2 className="font-bold dancing-font text-4xl md:text-5xl lg:text-6xl mb-5">
+								Gặp gỡ người làm nên sản phẩm
+							</h2>
+							<p className="text-base md:text-lg pb-10 px-3 md:px-5 lg:px-6 xl:px-20">
+								Trên hành trình kiến tạo một lối sống lành mạnh,
+								người làm nên sản phầm không đơn thuần là nhà
+								nghiên cứu - họ là những người lặng thầm gieo
+								trồng niềm tin vào thiên nhiên và sức khỏe bền
+								vững. Từ việc lựa chọn từng trái chuối tiêu xanh
+								sạch, ứng dụng công nghệ chiết xuất tinh bột
+								kháng, đến sự kết hợp tinh tế cùng đậu xanh, yến
+								mạch, mật ong, tất cả được tạo nên bằng tâm
+								huyết, sự tận tường và tình yêu dành cho con
+								người.
+							</p>
+							<button className="px-5 md:px-7 md:py-2 py-2 lg:px-10 lg:py-2 bg-[#5D9A4A] rounded-lg text-base lg:text-xl font-semibold animate-bounce text-white">
+								Xem thêm
+							</button>
+						</div>
 					</div>
 				</div>
 				<ProductSlider />
-				<div className="text-center pb-40">
+				<div className="text-center pb-40 px-5">
 					<h1 className="uppercase text-2xl font-bold mb-16 text-[#3E790A]">
 						Chứng chỉ sản phẩm
 					</h1>
-					<div className="grid grid-cols-4 gap-5">
+					<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
 						<div className="col-span-1 flex flex-col items-center">
 							<img
 								src="./CE1.png"

@@ -38,7 +38,7 @@ const elements = [
 		title: 'Shop',
 		subTitle: [
 			{
-				name: 'Tinh bộ kháng',
+				name: 'Tinh bột kháng',
 				link: '',
 			},
 			{
@@ -48,7 +48,7 @@ const elements = [
 		],
 	},
 	{
-		title: 'Về Kháng Ting An',
+		title: 'Về Kháng Tinh An',
 		subTitle: [
 			{
 				name: 'Câu chuyện thương hiệu',

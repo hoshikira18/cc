@@ -118,6 +118,7 @@ const NavBar = (props: IProps) => {
 												alt="logo"
 												width={200}
 												height={50}
+												className="h-10 w-auto scale-[2] lg:scale-100 lg:h-40"
 											/>
 										</Link>
 									</button>
@@ -146,6 +147,7 @@ const NavBar = (props: IProps) => {
 													alt="logo"
 													width={200}
 													height={50}
+													className="h-10 scale-[3] w-auto lg:scale-100 lg:h-40"
 												/>
 											</Link>
 										</button>
@@ -228,6 +230,7 @@ const NavBar = (props: IProps) => {
 												alt="logo"
 												width={200}
 												height={50}
+												className="h-10 w-auto scale-[2] lg:scale-100 lg:w-40"
 											/>
 										</Link>
 									</button>

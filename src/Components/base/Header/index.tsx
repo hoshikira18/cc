@@ -29,11 +29,10 @@ const Header = (props: IProps) => {
 				window.location.pathname !== '/products' &&
 				window.location.pathname !== '/products/id' &&
 				window.location.pathname !== '/products/id1' && (
-					<div className="flex justify-center mt-20">
+					<div className="flex justify-center mt-16">
 						<img
 							src={'/banner.jpg'}
-							className="w-full object-cover
-					"
+							className="w-full object-cover"
 						/>
 					</div>
 				)}
