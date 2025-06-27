@@ -45,17 +45,17 @@ function ProductSlider() {
 							<img
 								src="./P2/I1.png"
 								alt=""
-								className="absolute -bottom-10 right-0 animate-bounce w-60"
+								className="absolute -bottom-10 -right-10 lg:right-0 animate-bounce w-52 lg:w-60"
 							/>
 							<img
 								src="./P2/I2.png"
 								alt=""
-								className="absolute -bottom-10 left-20 animate-bounce w-28"
+								className="absolute -bottom-10 left-10 lg:left-20 animate-bounce w-20 lg:w-28"
 							/>
 							<img
 								src="./P2/I3.png"
 								alt=""
-								className="absolute top-10 left-60 animate-bounce w-32"
+								className="absolute top-10 left-60 animate-bounce w-20 lg:w-32"
 							/>
 						</div>
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5 mt-4 w-full lg:w-1/2 px-10 ">
@@ -171,17 +171,17 @@ function ProductSlider() {
 							<img
 								src="./P1/I1.png"
 								alt=""
-								className="absolute -bottom-10 left-0 animate-bounce w-40"
+								className="absolute -bottom-10 left-0 animate-bounce w-28 lg:w-40"
 							/>
 							<img
 								src="./P1/I2.png"
 								alt=""
-								className="absolute -bottom-10 right-0 animate-bounce w-40"
+								className="absolute -bottom-10 right-0 animate-bounce w-28 lg:w-40"
 							/>
 							<img
 								src="./P1/I3.png"
 								alt=""
-								className="absolute top-20 right-28 animate-bounce w-32"
+								className="absolute top-14 lg:top-20 right-28 animate-bounce w-24 lg:w-32"
 							/>
 						</div>
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5 mt-4 w-full lg:w-1/2 px-10">
